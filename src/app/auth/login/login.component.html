@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-3 mt-2">
+        <img class="img-fluid" src="assets/Svg/undraw_login.svg" alt="LogIn">
+
+    </div>
+    <div class="col-6">
+        <form  [formGroup]="logInFrom" (ngSubmit)="onsubmit()">
+            <div class="mt-3">
+                <label for="email">UserName</label>
+                <input formControlName="email"  type="text" class="form-control" id="email"
+                 placeholder="Email"/>
+
+                <!-- <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                    class= "mt-2 text-danger">
+                    
+                    <div *ngIf="email.errors?.['required']">
+                        Name is required.
+                    </div>
+
+                    <div *ngIf="email.errors?.['maxlength']">
+                        Name max langth 4
+                    </div>
+
+                    
+
+               
+                </div> -->
+                
+            </div>
+            <div class="mt-3">
+                <label for="password">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="password" 
+                placeholder="password"/>
+
+
+                <!-- <div *ngIf="getcontrol('password').invalid && (getcontrol('password').dirty || getcontrol('password').touched)"
+                    class= "mt-2 text-danger">
+
+                    <div *ngIf="getcontrol('password').errors?.['required']">
+                        Password is required.
+                    </div>
+
+                    <div *ngIf="getcontrol('password').errors?.['maxlength']">
+                        Password max langth 6
+                    </div>
+
+                    <div *ngIf="getcontrol('password').errors?.['minlength']">
+                        Password min langth 4
+                    </div>
+
+                </div> -->
+
+              
+
+                <a href="#">Forgate Password</a>
+            </div>
+            <!-- <div class="form-check mt-2">
+              <input formControlName="remember" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+               <label class="form-check-label" for="flexCheckChecked">
+                 Remember Me
+                </label>
+            </div> -->
+            <button type="submit" class="mt-3 btn btn-secondary" >Login</button>
+    
+            <div class="mt-3">
+                <a routerLink="/auth/signup">Create a New User</a>
+            </div>
+
+        </form>
+    
+       
+    </div>
+
+
+       
+    
+</div>

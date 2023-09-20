@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { InstituteListComponent } from './institute-list.component';
+
+describe('InstituteListComponent', () => {
+  let component: InstituteListComponent;
+  let fixture: ComponentFixture<InstituteListComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ InstituteListComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(InstituteListComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
